@@ -1,0 +1,89 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Patua+One|Open+Sans)
+	;
+
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.divx form {
+	display: inline;
+}
+
+.titlex {
+	display: inline;
+	font-family: 'Amarante', Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 3.6em;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 175px 0 0;
+}
+
+.addx {
+	border: 0px;
+	font-size: 14px;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	height: 36px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	background-color: #004080;
+}
+
+.addx:hover {
+	border: 0px;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	background-color: #004099;
+}
+
+table {
+	border-collapse: collapse;
+	font-family: "Times New Roman", Times, serif;
+	border: 1px solid #004080;
+	background-color: #EEEEEE;
+	text-align: center;
+	margin: 10px auto;
+	width: 100%;
+	padding: 15px;
+}
+
+tbody td {
+	border: 1px solid #004080;
+	padding: 5px;
+	font-weight: 300;
+	text-align: center;
+}
+
+tr {
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background: #EEEEff;
+}
+
+#addButton {
+	width: 25%;
+	display: inline;
+}
+
+thead {
+	background: #9C4EA4;
+}
+
+thead th {
+	font-family: 'Patua One', cursive;
+	font-size: 17px;
+	font-weight: 400;
+	color: #ffffff;
+	border: 2px solid #004080;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+	background-image: linear-gradient(#646f7f, #4a5564);
+}

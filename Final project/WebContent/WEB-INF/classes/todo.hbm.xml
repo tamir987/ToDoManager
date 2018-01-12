@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.Classes.Item" table="ITEMS" lazy="false">
+		<id name="id" type="int" column="ITEM_ID">
+			<generator class="increment" />
+		</id>
+		<property name="mission">
+			<column name="MISSION" />
+		</property>
+		<property name="location">
+			<column name="LOCATION" />
+		</property>
+		<property name="futureDate">
+			<column name="FUTUREDATE"></column>
+		</property>
+		<many-to-one name="user" class="Model.Classes.User">
+			<column name="USER_ID"></column>
+		</many-to-one>
+	</class>
+	<class name="Model.Classes.User" table="USERS" lazy="false">
+		<id name="id" type="int" column="USER_ID">
+			<generator class="increment"></generator></id>
+		<property name="name">
+			<column name="NAME"></column></property>
+		<property name="userName">
+			<column name="USERNAME"></column></property>
+		<property name="password">
+			<column name="PASSWORD"></column></property>
+		<set name="items" inverse="true" cascade="save-update, delete"
+			lazy="false">
+			<key>
+				<column name="USER_ID" not-null="false"></column>
+			</key>
+			<one-to-many class="Model.Classes.Item" />
+
+		</set>
+	</class>
+</hibernate-mapping>

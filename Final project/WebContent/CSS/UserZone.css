@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Patua+One|Open+Sans)
+	;
+
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+.divZone form {
+	display: inline;
+}
+
+.titleZone {
+	display: inline;
+	font-family: 'Amarante', Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 3.6em;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 110px 0 0;
+}
+
+.delUser {
+	border: 0px;
+	font-size: 14px;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	height: 36px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	background-color: #004080;
+}
+
+.delUser:hover {
+	border: 0px;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	background-color: #004099;
+}
+
+#delButton {
+	width: 35%;
+	display: inline;
+}

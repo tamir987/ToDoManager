@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+.EditTitle {
+	text-align: center;
+	font-family: 'Amarante', Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 3.6em;
+	vertical-align: middle;
+}
