@@ -1,3 +1,4 @@
 activeuserprofiles=TAMIR-LT;Team
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=TAMIR
+useridperkey=TAMIR-LT.Local\=TAMIR;
