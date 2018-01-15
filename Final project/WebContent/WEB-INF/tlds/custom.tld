@@ -11,7 +11,7 @@
     <tag-class>JspTags.ToDoTableTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
-   <name>items</name>
+   <name>item</name>
    <required>true</required>
    <rtexprvalue>true</rtexprvalue>
     <type>Model.Classes.Item</type>

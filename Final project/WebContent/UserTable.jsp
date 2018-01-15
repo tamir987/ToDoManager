@@ -58,7 +58,7 @@
 					for (Item itemx : userItems) {
 				%>
 				<tr>
-					<display:todotag items="<%=itemx%>" />
+					<display:todotag item="<%=itemx%>" />
 					<td>
 						<form action="Main" method="POST">
 							<input type="hidden" name="action" value="DeleteItem" /> <input
