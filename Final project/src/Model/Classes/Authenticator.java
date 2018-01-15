@@ -7,24 +7,55 @@ import java.util.List;
 import Model.DAO.HibernateToDoListDAO;
 import Model.Exceptions.ConnectionException;
 import Model.Exceptions.DataAccessLayerException;
+import Model.Exceptions.ValidationException;
 
+/**
+ * Represents an Authenticator object. This class have one method, that checks
+ * if the username & password exist in the database.
+ */
 public class Authenticator {
+	/**
+	 * Represents the User the class found after it's authentication.
+	 */
 	private User user;
+	/**
+	 * Represents the error message in case of authentication failure.
+	 */
 	private String message;
 
+	/**
+	 * Initialize the user & message objects.
+	 */
 	public Authenticator() {
 		user = null;
 		message = "";
 	}
 
+	/**
+	 * Sets the Authenticator's User.
+	 * 
+	 * @param user
+	 *            A User object belongs to the Authenticator class.
+	 */
 	public void setUser(User user) {
 		this.user = user;
 	}
 
+	/**
+	 * Gets the Authenticator's User.
+	 * 
+	 * @return A User object representing the user which have been found in the
+	 *         database.
+	 */
 	public User getUser() {
 		return this.user;
 	}
-
+	/**
+	 * Sets the Authenticator message.
+	 * 
+	 * @param message
+	 *            A string containing special message of the Authenticator class.
+	 */
 	public void setMessage(String message) {
 		this.message = message;
 	}
