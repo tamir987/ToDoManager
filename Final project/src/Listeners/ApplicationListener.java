@@ -6,40 +6,25 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 /**
- * Application Lifecycle Listener implementation class ApplicationListener
- *
+ * Servlet listener that helps processing data about the online users.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 @WebListener
 public class ApplicationListener implements ServletContextListener {
 
-	/**
-	 * Default constructor.
-	 */
 	public ApplicationListener() {
 	}
 
-	/**
-	 * @see ServletContextListener#contextDestroyed(ServletContextEvent)
-	 */
 	public void contextDestroyed(ServletContextEvent arg0) {
-		ServletContext application = arg0.getServletContext();
-		application.removeAttribute("UnKnownB");
-		application.removeAttribute("firefox");
-		application.removeAttribute("Netscape");
-		application.removeAttribute("chrome");
-		application.removeAttribute("Opera");
-		application.removeAttribute("safari");
-		application.removeAttribute("IE");
-		application.removeAttribute("UnKnown");
-		application.removeAttribute("IPhone");
-		application.removeAttribute("Android");
-		application.removeAttribute("Unix");
-		application.removeAttribute("Mac");
-		application.removeAttribute("Windows");
 	}
 
 	/**
-	 * @see ServletContextListener#contextInitialized(ServletContextEvent)
+	 * Handles ServletContext initializing - whenever a Servlet got initialized,
+	 * the Servlet listener initializing the Users information attributes to it.
+	 * 
+	 * @param arg0
+	 *            The ServletContextEvent object.
 	 */
 	public void contextInitialized(ServletContextEvent arg0) {
 		ServletContext application = arg0.getServletContext();
@@ -57,5 +42,4 @@ public class ApplicationListener implements ServletContextListener {
 		application.setAttribute("Mac", 0);
 		application.setAttribute("Windows", 0);
 	}
-
 }

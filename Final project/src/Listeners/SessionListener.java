@@ -10,39 +10,47 @@ import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
 /**
- * Application Lifecycle Listener implementation class SessionListener
- *
+ * Session listener that helps processing data about the online users.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 @WebListener
 public class SessionListener implements HttpSessionListener {
 
-	/**
-	 * Default constructor.
-	 */
 	public SessionListener() {
 	}
 
 	/**
-	 * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
+	 * Handles session creating - whenever a session got created, the Session
+	 * listener add it to the ServletContext's Set of HttpSession attribute.
+	 * 
+	 * @param arg0
+	 *            The HttpSessionEvent object.
 	 */
+	@SuppressWarnings("unchecked")
 	public void sessionCreated(HttpSessionEvent arg0) {
 		HttpSession session = arg0.getSession();
 		ServletContext application = session.getServletContext();
 		if (application.getAttribute("sessions") == null) {
 			application.setAttribute("sessions", new HashSet<HttpSession>());
 		}
-		@SuppressWarnings("unchecked")
 		Set<HttpSession> set = (Set<HttpSession>) application.getAttribute("sessions");
 		set.add(session);
 	}
 
 	/**
-	 * @see HttpSessionListener#sessionDestroyed(HttpSessionEvent)
+	 * Handles session destroying - whenever a session got destroyed, the
+	 * Session listener remove it from the ServletContext's Set of HttpSession
+	 * attribute. The Session listener also reducing the counting of the
+	 * relevant operating system and browser at the ServletContext's attributes.
+	 * 
+	 * @param arg0
+	 *            The HttpSessionEvent object.
 	 */
+	@SuppressWarnings("unchecked")
 	public void sessionDestroyed(HttpSessionEvent arg0) {
 		HttpSession session = arg0.getSession();
 		ServletContext application = session.getServletContext();
-		@SuppressWarnings("unchecked")
 		Set<HttpSession> set = (HashSet<HttpSession>) application.getAttribute("sessions");
 		set.remove(session);
 		String os = (String) session.getAttribute("os");
