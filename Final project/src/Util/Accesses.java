@@ -1,5 +1,9 @@
 package Util;
 
+/**
+ * Represents an Accesses class. This class have static final string variables
+ * that represents the administrator username & password.
+ */
 public class Accesses {
 
 	private Accesses() {

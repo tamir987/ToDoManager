@@ -1,5 +1,9 @@
 package Util;
 
+/**
+ * Represents a Views class. This class have static final string variables that
+ * represents the Views paths of the application.
+ */
 public class Views {
 
 	private Views() {
