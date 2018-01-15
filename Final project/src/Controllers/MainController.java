@@ -39,7 +39,7 @@ public class MainController extends HttpServlet {
 	}
 
 	/**
-	 * get a request and forward it to the login page - the application home
+	 * Get a request and forward it to the login page - the application home
 	 * page.
 	 * 
 	 * @param response
