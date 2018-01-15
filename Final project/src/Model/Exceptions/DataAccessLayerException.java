@@ -2,6 +2,8 @@ package Model.Exceptions;
 
 /**
  * Represents Exception thrown by the Data Access Layer.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 @SuppressWarnings("serial")
 public class DataAccessLayerException extends Exception {

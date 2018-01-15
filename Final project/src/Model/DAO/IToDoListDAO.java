@@ -8,6 +8,8 @@ import Model.Exceptions.DataAccessLayerException;
 /**
  * Represents the ToDoList data access object interface. Generic data access
  * object interface.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 public interface IToDoListDAO {
 

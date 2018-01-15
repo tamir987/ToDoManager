@@ -3,6 +3,8 @@ package Util;
 /**
  * Represents a Views class. This class have static final string variables that
  * represents the Views paths of the application.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 public class Views {
 

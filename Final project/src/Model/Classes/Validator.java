@@ -5,6 +5,8 @@ import Model.Exceptions.ValidationException;
 /**
  * Represents a Validator class. This class have static methods, that validates
  * inputs by REGEX.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 public class Validator {
 	/**

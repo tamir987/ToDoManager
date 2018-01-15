@@ -11,6 +11,8 @@ import Model.Exceptions.DataAccessLayerException;
 /**
  * Represents an Authenticator object. This class have one method, that checks
  * if the username & password exist in the database.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 public class Authenticator {
 	/**

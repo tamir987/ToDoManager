@@ -10,6 +10,8 @@ import Model.HibernateFactory.HibernateFactory;
 
 /**
  * Represents the ToDoList data access object. Generic data access object.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 public class HibernateToDoListDAO implements IToDoListDAO {
 

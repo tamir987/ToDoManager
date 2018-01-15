@@ -2,6 +2,8 @@ package Model.Exceptions;
 
 /**
  * Represents validation Exception thrown by the Model layer.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 @SuppressWarnings("serial")
 public class ValidationException extends Exception {

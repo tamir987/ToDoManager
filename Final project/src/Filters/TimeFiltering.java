@@ -10,25 +10,32 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
 /**
- * Servlet Filter implementation class TimeFiltering
+ * Servlet Filter that measure time between a Servlet request and its response.
+ * This filter belongs to the Main servlet.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 @WebFilter(servletNames = "Main", filterName = "MainFilter")
 public class TimeFiltering implements Filter {
 
-	/**
-	 * Default constructor.
-	 */
 	public TimeFiltering() {
 	}
 
-	/**
-	 * @see Filter#destroy()
-	 */
 	public void destroy() {
 	}
 
 	/**
-	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
+	 * The filter measure current time, and attach it as attribute to the
+	 * request.
+	 * 
+	 * @param request
+	 *            The request to the servlet.
+	 * @param response
+	 *            The response of the servlet.
+	 * @param chain
+	 *            The FilterChain object.
+	 * @throws ServletException,
+	 *             IOException.
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
@@ -37,9 +44,6 @@ public class TimeFiltering implements Filter {
 		chain.doFilter(request, response);
 	}
 
-	/**
-	 * @see Filter#init(FilterConfig)
-	 */
 	public void init(FilterConfig fConfig) throws ServletException {
 	}
 

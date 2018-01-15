@@ -6,6 +6,8 @@ import Model.Exceptions.ValidationException;
 
 /**
  * Represents a User. Every User have many Items.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 public class User {
 

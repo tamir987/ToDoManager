@@ -4,6 +4,8 @@ import Model.Exceptions.ValidationException;
 
 /**
  * Represents an Item. Every Item have one User.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 public class Item {
 

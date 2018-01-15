@@ -6,6 +6,8 @@ import Model.Exceptions.ConnectionException;
 
 /**
  * Represents the sessionFactory object. handle it in a Singleton way.
+ * 
+ * @author Tamir Schwartzberg (tamir5021@gmail.com).
  */
 public class HibernateFactory {
 
