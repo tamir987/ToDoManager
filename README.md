@@ -1,3 +1,12 @@
 # ToDoManager
-Java EE Servlet &amp; JSP &amp; MySQL ToDo list web application.
+ToDo list web application.
+
+Including : 
+
+* Java EE
+* Servlet & JSP
+* MySql database
+* HTML & CSS & JavaScript
+* Authentication & Validation
+
 Final Java EE server side course project. 
