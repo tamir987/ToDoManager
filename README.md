@@ -1,5 +1,6 @@
 # ToDoManager
 ToDo list web application.
+Final Java EE server side course project. 
 
 Including : 
 
@@ -8,5 +9,3 @@ Including :
 * MySql database
 * HTML & CSS & JavaScript
 * Authentication & Validation
-
-Final Java EE server side course project. 
